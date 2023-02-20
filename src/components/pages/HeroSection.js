@@ -21,7 +21,7 @@ const HeroSection = () => {
           <div className="d-sm-flex align-items-center justify-content-between">
             <div className="pb-5 wrap_hero">
               <h1 className="sewaMobil">
-                Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+                Sewa & Rental Mobil Terbaik di kawasan (Lokasimu) Sekarang Juga!
               </h1>
               <p className="tema_sewaMobil my-3">
                 Selamat datang di Binar Car Rental. Kami menyediakan mobil
