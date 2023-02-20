@@ -63,6 +63,7 @@
 
 .carousel-control-prev-icon{
     margin-left: 470px;
+    z-index: 0;
 }
 
 .carousel-control-next-icon{

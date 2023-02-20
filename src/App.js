@@ -9,6 +9,7 @@ import Navbar from "./components/pages/Navbar";
 import OurserSection from "./components/pages/OurserSection";
 import TestiSection from "./components/pages/TestiSection";
 import WhyUs from "./components/pages/WhyUs";
+import Pembayaran from "./components/pages/Pembayaran";
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
 
           <Route path="/carimobil" element={<CariMobil/>}/>
           <Route path="/hasilmobil" element={<HasilCariMobil/>}/>
-          <Route path="/hasilmobil/:id" element={<DetailMobil/>}/>
+          <Route path="/detailmobil/:id" element={<DetailMobil/>}/>
+          <Route path="/pembayaran" element={<Pembayaran/>}/>
         </Routes>
         
         <FooterSection/>

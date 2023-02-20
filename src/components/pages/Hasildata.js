@@ -53,7 +53,7 @@ const loading = () => {
                                    <p className="text">
                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                    </p>
-                                   <NavLink to={`/HasilCaridata{DetailMobil.id}`}>
+                                   <NavLink to={`/DetailMobil/${car.id}`}>
                                       <button className="pilih_mobil">Pilih Mobil</button>
                                    </NavLink>
                                </div>
