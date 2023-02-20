@@ -5,7 +5,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import ImgUser from "../components/asset/fi_users.svg";
 import './Filter.css'
 import { Form, DatePicker, Button} from 'antd'
-import moment from 'moment'
 import dayjs from 'dayjs';
 
 const Filter = () => {
@@ -19,7 +18,7 @@ const Filter = () => {
     const [carData, setCardata] = useState([])  
     const { RangePicker } = DatePicker;
     const dateFormat = 'DD MMM YYYY';
-    const [dates, setDates] = useState([])
+    const [dates] = useState([])
     console.log(dates)
 
     
