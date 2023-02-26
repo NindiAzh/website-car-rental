@@ -10,6 +10,9 @@ import OurserSection from "./components/pages/OurserSection";
 import TestiSection from "./components/pages/TestiSection";
 import WhyUs from "./components/pages/WhyUs";
 import Pembayaran from "./components/pages/Pembayaran";
+import PembayaranTransfer from "./components/pages/Pembayaran_Tf";
+import Upload from "./components/Upload";
+import ETiket from "./components/ETiket";
 
 function App() {
 
@@ -30,6 +33,9 @@ function App() {
           <Route path="/hasilmobil" element={<HasilCariMobil/>}/>
           <Route path="/detailmobil/:id" element={<DetailMobil/>}/>
           <Route path="/pembayaran" element={<Pembayaran/>}/>
+          <Route path="/transfer" element={<PembayaranTransfer/>}/>
+          <Route path="/upload" element={<Upload/>}/>
+          <Route path="/etiket" element={<ETiket/>}/>
         </Routes>
         
         <FooterSection/>

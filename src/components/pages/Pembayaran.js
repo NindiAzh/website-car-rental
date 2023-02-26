@@ -4,16 +4,30 @@ import { Container, Row, Col } from "react-bootstrap";
 import Hr from '../asset/hr.svg';
 import HrInfo from '../asset/hr-info.svg';
 import user from "../asset/fi_users.svg";
+import StopperOne from '../pages/stopper/StopperOne'
+import { useNavigate } from "react-router-dom";
 
 
 const Pembayaran = () => {
+
+  const navigate = useNavigate();
+  const handletotransfer  = () => {
+    navigate('/transfer')
+  }
+
+
   return (
     <>
 
-      <div className="hero">
+      <div className="hero_pembayaran">
           <div className="container">
             <div className="d-sm-flex align-items-center justify-content-between">
-              <div className="wrapper"> </div>
+            <div className="wrapper">
+              <h1 className='h1_pay'>Pembayaran</h1>
+              <div className="d-flex stopper">
+                  <StopperOne/>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,11 +136,11 @@ const Pembayaran = () => {
                         <h1 className="harga">Biaya Lainnya</h1>
                         <div className="d-flex flex-row justify-content-between mt-2">
                           <li className="harga_sewa">Pajak</li>
-                          <h1 className="text">Termasuk</h1>
+                          <h1 className="termasuk">Termasuk</h1>
                         </div>
                         <div className="d-flex flex-row justify-content-between mt-1">
                           <li className="harga_sewa">Biaya makan sopir</li>
-                          <h1 className="text">Termasuk</h1>
+                          <h1 className="termasuk">Termasuk</h1>
                         </div>
 
                         {/* BELUM TERMASUK */}
@@ -142,7 +156,7 @@ const Pembayaran = () => {
                           <h1 className="total_num">Rp. 3.500.000</h1>
                         </div>
 
-                        <button type="primary" className="btn_bayar mt-3" htmlType="submit">
+                        <button className="btn_bayar mt-3" onClick={handletotransfer}>
                             Bayar
                         </button>
                     
